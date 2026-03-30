@@ -1,0 +1,11 @@
+[build]
+  base = "modern-portfolio-main"
+  command = "next build"
+  functions = "netlify/functions"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  
+[dev]
+  command = "next dev"
+  port = 3000
