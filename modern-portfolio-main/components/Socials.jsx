@@ -44,7 +44,7 @@ export const socialData = [
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-lg">
+    <div className=\"flex items-center gap-x-5 text-lg relative z-20 pointer-events-auto\">
       {socialData.map((social, i) => (
         <Link
           key={i}
@@ -56,7 +56,7 @@ const Socials = () => {
             social.name === "Github"
               ? "bg-accent rounded-full p-[5px] hover:text-white"
               : "hover:text-accent"
-          } transition-all duration-300`}
+          } transition-all duration-300 cursor-pointer pointer-events-auto z-20 relative flex items-center`}
         >
           <social.Icon aria-hidden />
           <span className="sr-only">{social.name}</span>

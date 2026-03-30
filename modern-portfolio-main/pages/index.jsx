@@ -8,17 +8,17 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="bg-primary/60 h-full relative z-0">
       {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 pointer-events-none z-0">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto relative z-10 px-4 w-full">
           {/* title */}
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 relative z-10 pointer-events-auto mt-4 leading-tight break-words"
           >
             Zahid Basha <br /> <span className="text-accent">Performance Marketing Specialist</span>
           </motion.h1>
@@ -29,14 +29,14 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 relative z-10 pointer-events-auto mt-2"
           >
             I Generate High-Quality Real Estate Leads at <span className="text-accent font-bold">₹2.3 Cost</span> <br/>
             150+ Leads Per Month | ₹1.5L+ Ad Spend Managed | Meta Ads Expert
           </motion.p>
 
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative z-20 pointer-events-auto mt-4">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -44,14 +44,14 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="hidden xl:flex relative z-20 pointer-events-auto"
           >
             <ProjectsBtn />
           </motion.div>
         </div>
       </div>
       {/* image */}
-      <div className="w-[1280px] h-full absolute right-0 bottom-0">
+      <div className="w-[1280px] h-full absolute right-0 bottom-0 pointer-events-none z-0">
         {/* bg img */}
         <div
           role="img"

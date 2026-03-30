@@ -19,6 +19,7 @@ const Layout = ({ children }) => {
     >
       {/* metadata */}
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Zahid Basha | Performance Marketer | Meta Ads Expert</title>
         <meta
           name="description"
