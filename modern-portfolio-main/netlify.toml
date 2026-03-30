@@ -5,3 +5,12 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[dev]
+  command = "next dev"
+  port = 3000
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

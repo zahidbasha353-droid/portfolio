@@ -11,10 +11,12 @@ const ProjectsBtn = () => {
         className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
       >
         <Image
-          src="/rounded-text.png"
+          src="/rounded-text.png?v=1"
           alt="rounded text"
           width={141}
           height={148}
+          priority={false}
+          unoptimized
           className="animate-spin-slow w-full h-full max-w-[141px] max-h-[148px] pointer-events-none select-none"
         />
         <HiArrowRight

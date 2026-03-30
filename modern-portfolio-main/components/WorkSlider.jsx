@@ -13,23 +13,23 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
-          path: "/thumb1.jpg",
+          title: "Meta Ads Screenshot",
+          path: "/thumb1.jpeg?v=1",
           link: "http://example.com",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
+          title: "Lead Generation Data",
+          path: "/thumb2.jpeg?v=1",
           link: "http://example.com",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
+          title: "Campaign Results",
+          path: "/thumb3.jpeg?v=1",
           link: "http://example.com",
         },
         {
-          title: "title",
-          path: "/thumb4.jpg",
+          title: "Performance Metrics",
+          path: "/thumb4.jpeg?v=1",
           link: "http://example.com",
         },
       ],
@@ -37,23 +37,23 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
-          path: "/thumb4.jpg",
+          title: "Performance Metrics",
+          path: "/thumb4.jpeg?v=1",
           link: "http://example.com",
         },
         {
-          title: "title",
-          path: "/thumb1.jpg",
+          title: "Meta Ads Screenshot",
+          path: "/thumb1.jpeg?v=1",
           link: "http://example.com",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
+          title: "Lead Generation Data",
+          path: "/thumb2.jpeg?v=1",
           link: "http://example.com",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
+          title: "Campaign Results",
+          path: "/thumb3.jpeg?v=1",
           link: "http://example.com",
         },
       ],
@@ -86,6 +86,8 @@ const WorkSlider = () => {
                     alt={image.title}
                     width={500}
                     height={300}
+                    priority={false}
+                    unoptimized
                   />
 
                   {/* overlay gradient */}

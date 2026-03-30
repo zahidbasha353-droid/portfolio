@@ -9,21 +9,21 @@ import "swiper/css/pagination";
 
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
+    image: "/t-avt-1.png?v=1",
     name: "Rajesh Kumar",
     position: "Real Estate Developer",
     message:
       "Zahid transformed our lead generation strategy completely. Within 3 months, we were getting 150+ quality leads monthly at just ₹2.3 per lead. His expertise is unmatched!",
   },
   {
-    image: "/t-avt-2.png",
+    image: "/t-avt-2.png?v=1",
     name: "Priya Sharma",
     position: "Property Management Head",
     message:
       "Professional, data-driven, and results-oriented. Zahid managed our ₹1.5L+ ad budget with precision and delivered exceptional ROI. I highly recommend working with him.",
   },
   {
-    image: "/t-avt-3.png",
+    image: "/t-avt-3.png?v=1",
     name: "Arun Singh",
     position: "Real Estate Entrepreneur",
     message:
@@ -54,6 +54,8 @@ const TestimonialSlider = () => {
                     width={100}
                     height={100}
                     alt={person.name}
+                    priority={false}
+                    unoptimized
                   />
                 </div>
 
