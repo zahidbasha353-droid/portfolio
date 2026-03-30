@@ -1,7 +1,7 @@
 [build]
   base = "modern-portfolio-main"
   command = "next build"
-  functions = "netlify/functions"
+  publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
