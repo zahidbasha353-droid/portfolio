@@ -1,6 +1,5 @@
 [build]
   command = "npm run build"
-  publish = ".next"
   ignore = "git diff HEAD^ HEAD --name-only | grep -qEv '(\\.md$|LICENSE$|\\.env\\.example$|^\\.github/|^\\.vscode/)' && exit 1 || exit 0"
 
 [[plugins]]
@@ -9,8 +8,3 @@
 [dev]
   command = "next dev"
   port = 3000
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
