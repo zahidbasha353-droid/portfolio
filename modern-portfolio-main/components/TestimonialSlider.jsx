@@ -43,9 +43,9 @@ const TestimonialSlider = () => {
     >
       {testimonialData.map((person, i) => (
         <SwiperSlide key={i}>
-          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-x-8 h-full px-4 md:px-8 lg:px-12">
             {/* avatar, name, position */}
-            <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
+            <div className="w-full md:w-auto md:max-w-[300px] flex flex-col md:justify-center items-center md:items-start relative mx-auto md:mx-0">
               <div className="flex flex-col justify-center text-center">
                 {/* avatar */}
                 <div className="mb-2 mx-auto">
@@ -70,17 +70,17 @@ const TestimonialSlider = () => {
             </div>
 
             {/* quote & message */}
-            <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
+            <div className="flex-1 flex flex-col justify-center before:w-[1px] md:before:bg-white/20 md:before:absolute md:before:left-0 md:before:h-[150px] lg:before:h-[200px] relative md:pl-0 lg:pl-12 xl:pl-20">
               {/* quote icon */}
               <div className="mb-4">
                 <FaQuoteLeft
-                  className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0"
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white/20 mx-auto md:mx-0"
                   aria-aria-hidden
                 />
               </div>
 
               {/* message */}
-              <div className="xl:text-lg text-center md:text-left">
+              <div className="text-sm sm:text-base md:text-lg xl:text-xl text-center md:text-left">
                 {person.message}
               </div>
             </div>

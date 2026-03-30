@@ -68,7 +68,7 @@ const Contact = () => {
             name="contact"
           >
             {/* input group */}
-            <div className="flex gap-x-6 w-full">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-x-6 w-full">
               <input type="hidden" name="form-name" value="contact" />
 
               <input
@@ -78,6 +78,7 @@ const Contact = () => {
                 className="input"
                 disabled={isLoading}
                 aria-disabled={isLoading}
+                aria-label="Full name"
                 required
                 aria-required
               />
@@ -88,6 +89,7 @@ const Contact = () => {
                 className="input"
                 disabled={isLoading}
                 aria-disabled={isLoading}
+                aria-label="Email address"
                 required
                 aria-required
               />
@@ -114,7 +116,7 @@ const Contact = () => {
             <div className="flex gap-x-4 flex-wrap">
               <button
                 type="submit"
-                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+                className="btn rounded-full border border-white/50 w-full sm:w-auto sm:max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent active:scale-95 group"
                 disabled={isLoading}
                 aria-disabled={isLoading}
               >
@@ -131,7 +133,7 @@ const Contact = () => {
                 href="https://wa.me/917550177369?text=Hi%20Zahid%2C%20I%27m%20interested%20in%20your%20digital%20marketing%20services"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+                className="btn rounded-full border border-white/50 w-full sm:w-auto sm:max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent active:scale-95 group"
               >
                 <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                   WhatsApp
